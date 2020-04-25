@@ -25,9 +25,9 @@ def register():
         user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
-        flash('Your account has been created! You are now able to log in', 'success')
+        flash('A sua conta foi criada com sucesso!', 'success')
         return redirect(url_for('login'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('register.html', title='Criar conta', form=form)
 
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -43,7 +43,7 @@ def login():
             return redirect(next_page) if next_page else redirect(url_for('Entrada'))
         else:
             flash('Iniciar sessão falhou. Confirme o mail e a palavra-passe', 'danger')
-    return render_template('login.html', title='Login', form=form)
+    return render_template('login.html', title='Iniciar Sessão', form=form)
 
 @app.route("/logout")
 def logout():
