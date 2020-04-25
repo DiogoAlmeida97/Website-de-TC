@@ -80,7 +80,18 @@ h1, h2,  h4, h5, h6 {
 .bg-steel {
   background-color: #081036;
 }
+.dropdown-toggle{
+  padding-top: 7px;
 
+}
+
+.dropdown-menu{
+  background-color: #25262b;
+  
+}
+.btn-group{
+  color: #c09c24;
+}
 .site-header .navbar-nav .nav-link {
   color: #c09c24;
 }
@@ -106,6 +117,7 @@ h1, h2,  h4, h5, h6 {
   border: 0;
 }
 
+
 .carousel-inner{
   margin-right: auto;
   margin-left: auto;
@@ -120,7 +132,7 @@ h1, h2,  h4, h5, h6 {
 .item img {
   position: relative;
   width: 1000px;
-  height: 400px !important ;
+  height: 500px !important ;
   display: none;
  
 }
