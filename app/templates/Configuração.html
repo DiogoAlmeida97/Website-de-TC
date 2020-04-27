@@ -1,6 +1,24 @@
 {%extends "layout.html"%}
 
 {% block content %}
-<h1>      ...Ainda em desenvolvimento...</h1>
+<script>  function changeColor(colorName) {
+    document.body.style.background = colorName;}
+    function changeColor2(colorName) {
+    document.body.header.style.background = colorName; 
+  }</script>
+
+  <button class="btnBlue"     onclick="changeColor('blue')">Blue</button>
+  <button class="btnRed"      onclick="changeColor('red')">Red</button>
+  <button class="btnGreen"    onclick="changeColor('green')">Green</button>
+  <button class="btnOrange"   onclick="changeColor('orange')">Orange</button>
+  <button class="btnYellow"   onclick="changeColor('yellow')">Yellow</button>
+  <button class="btnPink"     onclick="changeColor('pink')">Pink</button>
+  <button class="btnPurple"   onclick="changeColor('purple')">Purple</button>
+  <button class="btnBrown"    onclick="changeColor('brown')">Brown</button>
+  <button class="btnBlack"    onclick="changeColor('black')">Black</button>
+  <button class="btnGray"     onclick="changeColor('gray')">Gray</button>
+
+
+
 
 {% endblock %}

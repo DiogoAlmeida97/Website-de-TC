@@ -153,5 +153,6 @@ def Blog():
 
 @app.route('/Configuração')
 def Configuração():
+    
     return render_template("Configuração.html")
 
