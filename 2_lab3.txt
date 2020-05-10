@@ -1,9 +1,0 @@
-10^n10^n1
-A___B___C
-S->1B1
-B->0B0|1
-
-Exemplo:
-a^nb^2na
-R->Sa
-S->aSbb|E
