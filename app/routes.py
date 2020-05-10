@@ -8,6 +8,7 @@ from .models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
 
+
 @app.route('/')
 @app.route('/Entrada')
 def Entrada():
@@ -146,9 +147,19 @@ def Contactos():
     return render_template("Contactos.html")
 
 
-@app.route('/Blog')
-def Blog():
-    return render_template("Blog.html")
+@app.route('/Autómatos', methods = ['GET', 'POST'])
+def Autómatos():
+    
+   
+    return render_template("Autómatos.html",)
+
+@app.route('/AutómatoPilha')
+def AutómatoPilha():
+    return render_template("AutómatoPilha.html")
+
+@app.route('/Expressões_Regulares')
+def ER():
+    return render_template("Expressões_Regulares.html")
 
 
 @app.route('/Configuração')

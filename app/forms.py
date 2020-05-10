@@ -27,6 +27,8 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('Esse email já está a ser utilizado. Por favor insira outro email.')
 
 
+
+
 class LoginForm(FlaskForm):
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
